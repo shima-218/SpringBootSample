@@ -19,4 +19,7 @@ public interface UserService {
 	//ユーザー削除
 	public void deleteUserOne(String userId);
 
+	//ログインユーザー取得
+	public MUser getLoginUser(String userId);
+
 }
