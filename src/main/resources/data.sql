@@ -5,8 +5,8 @@ values('1','Tom',30);
 insert into m_user (
  user_id,password,user_name,birthday,age,gender,department_id,role
 )values
-('system@co.jp','Password_1','システム管理者','1994-02-17',27,1,1,'ROLE_ADMIN'),
-('user@co.jp','Password_2','ユーザー1','2000-01-01',21,2,2,'ROLE_GENERAL');
+('system@co.jp','$2a$10$yduk4l4anbJ8tV8/poH.yedAEddDAPq7rgC398f0.7VD1jLybxkaK','システム管理者','1994-02-17',27,1,1,'ROLE_ADMIN'),
+('user@co.jp','$2a$10$yduk4l4anbJ8tV8/poH.yedAEddDAPq7rgC398f0.7VD1jLybxkaK','ユーザー1','2000-01-01',21,2,2,'ROLE_GENERAL');
 
 /*部署マスタ*/
 insert into m_department(department_id,department_name)
