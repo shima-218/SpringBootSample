@@ -34,9 +34,11 @@ dependencies {
 	implementation group: 'org.modelmapper.extensions', name: 'modelmapper-spring', version: '2.3.9'
 	implementation group: 'org.springframework', name: 'spring-aop'
 	implementation group: 'org.aspectj', name:'aspectjweaver'
+	implementation group: 'org.webjars', name:'datatables', version: '1.10.21'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.h2database:h2'
+	runtimeOnly group: 'org.webjars', name: 'datatables-plugins', version: '1.10.21'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

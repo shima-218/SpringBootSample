@@ -46,6 +46,7 @@ public class SignupController {
 	@PostMapping("/signup")
 	public String postSignup(Model model, Locale locale, @ModelAttribute @Validated(GroupOrder.class) SignupForm form,
 			BindingResult bindingResult) {
+		log.info(bindingResult.toString());
 		if (bindingResult.hasErrors()) {
 			return getSignup(model, locale, form);
 		}

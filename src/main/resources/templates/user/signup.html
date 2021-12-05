@@ -11,6 +11,7 @@
 <!-- JS -->
 <script th:src="@{/webjars/jquery/jquery.min.js}" defer></script>
 <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}" defer></script>
+<script th:src="@{/js/user/signup.js}" defer></script>
 <title th:text="#{user.signup.title}"></title>
 </head>
 <body class="bg-light">
@@ -52,6 +53,8 @@
 		</div>
 		<input type="submit" th:value="#{user.signup.btn}"
 			class="btn btn-primary w-100 mt-3" />
+		<button type="button"  th:text="#{user.signup.restbtn}"
+			id="btn-signup" class="btn btn-primary w-100 mt-3"></button>
 		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
 	</form>
 </body>
