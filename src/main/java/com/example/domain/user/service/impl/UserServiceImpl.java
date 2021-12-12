@@ -54,6 +54,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	//ログインユーザー取得
+	@Override
 	public MUser getLoginUser(String userId) {
 		return mapper.findLoginUser(userId);
 	}
